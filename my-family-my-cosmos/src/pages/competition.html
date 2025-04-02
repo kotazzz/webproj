@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конкурс - Моя семья - Мой космос</title>
+    <link rel="stylesheet" href="../css/dark-theme.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Моя семья - Мой космос</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="account.html">Личный кабинет</a></li>
+                <li><a href="competition.html">Конкурсы</a></li>
+                <li><button id="theme-toggle">Сменить тему</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="competition-details">
+            <h2>Название конкурса</h2>
+            <img src="../assets/images/competition-image.jpg" alt="Изображение конкурса">
+            <p>Описание: Это подробное описание конкурса, включая правила, цели и другую важную информацию.</p>
+            <p>Рейтинг: ★★★★☆</p>
+            <p>Посетители: 150</p>
+        </section>
+        
+        <section class="registration-info">
+            <h3>Зарегистрируйтесь на этот конкурс</h3>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Моя семья - Мой космос. Все права защищены.</p>
+    </footer>
+    
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

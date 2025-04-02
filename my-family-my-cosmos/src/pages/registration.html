@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Моя семья - Мой космос</title>
+    <link rel="stylesheet" href="../css/dark-theme.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Регистрация на сайте "Моя семья - Мой космос"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="account.html">Личный кабинет</a></li>
+                <li><a href="competition.html">Конкурсы</a></li>
+                <li><button id="theme-toggle">Сменить тему</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="registration-form">
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="email-error"></span>
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="name-error"></span>
+
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" required>
+            <span class="error-message" id="surname-error"></span>
+
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" required min="1">
+            <span class="error-message" id="age-error"></span>
+
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Выберите...</option>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+                <option value="non-binary">Небинарный</option>
+                <option value="transgender">Трансгендер</option>
+                <option value="genderqueer">Гендерквир</option>
+                <option value="agender">Агендер</option>
+                <option value="bigender">Бигендер</option>
+                <option value="genderfluid">Гендерфлюид</option>
+                <option value="demiboy">Демибой</option>
+                <option value="demigirl">Демигёрл</option>
+                <option value="androgyne">Андрогин</option>
+                <option value="other">Другой</option>
+            </select>
+            <span class="error-message" id="gender-error"></span>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error-message" id="password-error"></span>
+
+            <label for="family-photo">Загрузите семейное фото:</label>
+            <input type="file" id="family-photo" name="family-photo" accept="image/*" required>
+            <span class="error-message" id="photo-error"></span>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Моя семья - Мой космос. Все права защищены.</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

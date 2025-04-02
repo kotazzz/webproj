@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья - Мой космос | Личный кабинет</title>
+    <link rel="stylesheet" href="../css/dark-theme.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Моя семья - Мой космос</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="account.html">Личный кабинет</a></li>
+                <li><a href="competition.html">Конкурсы</a></li>
+                <li><button id="theme-toggle">Сменить тему</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="account-info">
+            <h2>Ваш аккаунт</h2>
+            <p>Добро пожаловать, [Имя пользователя]!</p>
+            <p>Ваш зарегистрированный email: [Email пользователя]</p>
+        </section>
+        
+        <section class="contest-registration">
+            <h2>Запишитесь на конкурсы</h2>
+            <form id="contest-registration-form">
+                <label for="contest">Выберите конкурс:</label>
+                <select id="contest" name="contest" required>
+                    <option value="">--Выберите конкурс--</option>
+                    <option value="contest1">Конкурс 1</option>
+                    <option value="contest2">Конкурс 2</option>
+                    <option value="contest3">Конкурс 3</option>
+                </select>
+
+                <label for="date">Выберите дату:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Выберите время:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="participants">Количество участников:</label>
+                <input type="number" id="participants" name="participants" min="1" required>
+
+                <button type="submit">Записаться</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Моя семья - Мой космос. Все права защищены.</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
