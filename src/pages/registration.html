@@ -29,23 +29,23 @@
         </blockquote>
         <form id="registration-form">
             <label for="email">Электронная почта:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required title="Введите ваш email">
             <span class="error-message" id="email-error"></span>
 
             <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required title="Введите ваше имя">
             <span class="error-message" id="name-error"></span>
 
             <label for="surname">Фамилия:</label>
-            <input type="text" id="surname" name="surname" required>
+            <input type="text" id="surname" name="surname" placeholder="Ваша фамилия" required title="Введите вашу фамилию">
             <span class="error-message" id="surname-error"></span>
 
             <label for="age">Возраст:</label>
-            <input type="number" id="age" name="age" required min="1">
+            <input type="number" id="age" name="age" placeholder="Ваш возраст" required min="1" title="Введите ваш возраст">
             <span class="error-message" id="age-error"></span>
 
             <label for="gender">Пол:</label>
-            <select id="gender" name="gender" required>
+            <select id="gender" name="gender" required title="Выберите ваш пол">
                 <option value="">Выберите...</option>
                 <option value="male">Мужской</option>
                 <option value="female">Женский</option>
@@ -63,11 +63,15 @@
             <span class="error-message" id="gender-error"></span>
 
             <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="Придумайте пароль" required title="Введите пароль">
             <span class="error-message" id="password-error"></span>
 
+            <label for="confirm-password">Подтвердите пароль:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторите пароль" required title="Повторите пароль">
+            <span class="error-message" id="confirm-password-error"></span>
+
             <label for="family-photo">Загрузите семейное фото:</label>
-            <input type="file" id="family-photo" name="family-photo" accept="image/*" required>
+            <input type="file" id="family-photo" name="family-photo" accept="image/*" required title="Загрузите фото вашей семьи">
             <span class="error-message" id="photo-error"></span>
 
             <button type="submit">Зарегистрироваться</button>

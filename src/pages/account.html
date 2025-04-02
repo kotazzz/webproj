@@ -35,7 +35,7 @@
             <h2>Запишитесь на конкурсы</h2>
             <form id="contest-registration-form">
                 <label for="contest">Выберите конкурс:</label>
-                <select id="contest" name="contest" required>
+                <select id="contest" name="contest" required title="Выберите конкурс из списка">
                     <option value="">--Выберите конкурс--</option>
                     <option value="contest1">Конкурс 1</option>
                     <option value="contest2">Конкурс 2</option>
@@ -43,13 +43,13 @@
                 </select>
 
                 <label for="date">Выберите дату:</label>
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="date" name="date" required title="Выберите дату участия">
 
                 <label for="time">Выберите время:</label>
-                <input type="time" id="time" name="time" required>
+                <input type="time" id="time" name="time" required title="Выберите время участия">
 
                 <label for="participants">Количество участников:</label>
-                <input type="number" id="participants" name="participants" min="1" required>
+                <input type="number" id="participants" name="participants" placeholder="Например, 3" min="1" required title="Введите количество участников">
 
                 <button type="submit">Записаться</button>
             </form>
