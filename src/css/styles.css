@@ -59,11 +59,12 @@ nav ul li a, nav ul li button {
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #444;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover, nav ul li button:hover {
     background-color: #555;
+    color: #fff; /* Убедимся, что текст остается белым */
 }
 
 /* Стиль для кнопки "Сменить тему" */
@@ -209,4 +210,105 @@ footer {
         font-size: 14px;
         padding: 8px;
     }
+}
+
+/* Стили для ссылок */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Унифицированный стиль для кнопок и ссылок */
+button, .button, nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .button:hover, nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Стили для цитат */
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #444;
+    color: #fff;
+    border-left: 5px solid #007BFF;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Стили для кнопки "Сменить тему" */
+nav ul li button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li button:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li button:active {
+    transform: scale(1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Новый стиль для кнопки "Сменить тему" */
+#theme-toggle-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#theme-toggle {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#theme-toggle:active {
+    transform: scale(1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }

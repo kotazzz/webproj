@@ -7,3 +7,12 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
         themeStyle.setAttribute('href', '../css/dark-theme.css');
     }
 });
+
+// Добавление эффекта наведения для кнопки
+document.getElementById('theme-toggle').addEventListener('mouseover', () => {
+    document.getElementById('theme-toggle').style.transform = 'scale(1.05)';
+});
+
+document.getElementById('theme-toggle').addEventListener('mouseout', () => {
+    document.getElementById('theme-toggle').style.transform = 'scale(1)';
+});
